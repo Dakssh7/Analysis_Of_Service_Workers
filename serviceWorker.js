@@ -1,4 +1,4 @@
-var cacheName = "v1"
+var cacheName = "v1Cache";
 
 const cacheFiles = [
   "./images/image-1.jpg",
@@ -13,7 +13,7 @@ const cacheFiles = [
   "./images/image-10.jpg",
   "./index.html",
   "./about-us.html",
-  "./main.js"
+  "./main.js",
 ];
 
 self.addEventListener("install", function (event) {
@@ -23,8 +23,6 @@ self.addEventListener("install", function (event) {
     })
   );
 });
-
-
 
 // Intercept fetch requests
 self.addEventListener("fetch", function (event) {
